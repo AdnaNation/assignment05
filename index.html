@@ -9,37 +9,124 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- common colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primaryColor: '#1DD100',
+                        secondaryColor: '#030712',
+                        thirdColor: '#03071299'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <header class="mx-auto max-w-[1400px]">
+    <header class="mx-auto container">
         <!-- nav section -->
         <div class="navbar bg-base-100">
             <div class="flex-1">
                 <a class="btn btn-ghost text-4xl text-[#030712] font-raleway font-extrabold">P-Ticket</a>
             </div>
             <div class="flex-none border bg-[#1DD1001A] py-3 px-5 rounded-md">
-                <p class="text-3xl font-bold .font-raleway text-[#1DD100] flex items-center gap-2" flex items-center
+                <p class="text-3xl font-bold font-raleway text-[#1DD100] flex items-center gap-2" flex items-center
                     gap-2 "><span>Bus</span><span class=" pt-2"><img src=" images/bus-icon.png" alt=""></span>
                 </p>
             </div>
         </div>
         <!-- banner section -->
-        <div class="hero min-h-[400px] lg:min-h-[550px]" style="background-image: url(/images/banner.png);">
+        <div class="hero min-h-[400px] lg:min-h-[550px] rounded-3xl overflow-hidden"
+            style="background-image: url(images/banner.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
-                <div class="">
-                    <h1 class="text-6xl font-extrabold font-raleway ">
+                <div class="space-y-5 max-w-2xl">
+                    <h1 class="text-3xl lg:text-6xl font-extrabold font-raleway">
                         <p>End-to-End Travel with</p>
-                        <p>P Paribahan</p>
+                        <p class="text-secondaryColor mt-3">P Paribahan</p>
                     </h1>
-                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                    <p class="text-xl font-inter font-normal ">Yes, you can run unit tests and view the results directly
+                        within the app. The
                         integrated testing features allow for a streamlined.</p>
-                    <button class="btn ">Buy Tickets</button>
+                    <button
+                        class="btn text-xl font-bold text- secondaryColor font-raleway bg-primaryColor border-none ">Buy
+                        Tickets</button>
                 </div>
             </div>
         </div>
+
+        <!-- community status -->
+        <div class="flex flex-col lg:flex-row gap-3 justify-center lg:-mt-16 ">
+            <div
+                class="flex items-center border border-b-primaryColor border-b-4 rounded-xl py-8  justify-center lg:w-[350px] bg-white">
+                <div class="border border-dashed">
+                    <img src="images/people.png" alt="">
+                </div>
+                <div>
+                    <p class="text-4xl font-bold font-inter  text-secondaryColor">500K+</p>
+                    <p class="text-thirdColor mt-1">Resistered users</p>
+                </div>
+            </div>
+            <div
+                class="flex items-center border border-b-primaryColor border-b-4 rounded-xl py-8  justify-center lg:w-[350px] bg-white">
+                <div class="border border-dashed">
+                    <img src="images/ticket-cupon.png" alt="">
+                </div>
+                <div>
+                    <p class="text-4xl font-bold font-inter  text-secondaryColor">1.7 Lacks</p>
+                    <p class="text-thirdColor mt-1">Tickets sold</p>
+                </div>
+            </div>
+            <div
+                class="flex items-center border border-b-primaryColor border-b-4 rounded-xl py-8  justify-center lg:w-[350px] bg-white">
+                <div class="border border-dashed">
+                    <img src="images/stoppage.png" alt="">
+                </div>
+                <div>
+                    <p class="text-4xl font-bold font-inter  text-secondaryColor">80K+</p>
+                    <p class="text-thirdColor mt-1">Rental partners</p>
+                </div>
+            </div>
+
+        </div>
     </header>
+    <main class="mx-auto container mt-14 lg:mt-20">
+        <!-- offer section -->
+        <section>
+            <h2 class="text-3xl lg:text-4xl font-bold font-raleway text-center mb-8 lg:mb-14">Best offers for you</h2>
+            <div class="flex flex-col lg:flex-row justify-center gap-4">
+                <div class="flex items-center gap-5 bg-[#FFBF0F] font-inter rounded-3xl">
+                    <div class="lg:space-y-3 lg:p-8 pl-8">
+                        <p class="text-3xl lg:text-4xl text-secondaryColor font-extrabold">15% OFF</p>
+                        <p class="lg:text-2xl font-semibold ">on your next purchase</p>
+                        <p class="lg:text-xl text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <div class="font-raleway lg:p-8">
+                        <p class="text-3xl lg:text-4xl text-secondaryColor font-extrabold">NEW15</p>
+                        <p class="lg:text-xl text-[#03071266]">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5 bg-[#F78C9C] font-inter rounded-3xl">
+                    <div class="lg:space-y-3 lg:p-8 pl-8">
+                        <p class="text-3xl lg:text-4xl text-secondaryColor font-extrabold">15% OFF</p>
+                        <p class="lg:text-2xl font-semibold ">on your next purchase</p>
+                        <p class="lg:text-xl text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <div class="font-raleway lg:p-8">
+                        <p class="text-3xl lg:text-4xl text-secondaryColor font-extrabold">Couple 20</p>
+                        <p class="lg:text-xl text-[#03071266]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
