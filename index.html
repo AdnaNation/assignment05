@@ -281,17 +281,55 @@
                         <button class="col-span-2 bg-[#F7F8F8] ">J4</button>
                     </div>
                 </div>
-                <div class="w-full lg:w-[45%]">
+                <div class="w-full lg:w-[45%] lg:p-8">
                     <!-- seat input field -->
                     <h4 class="text-2xl font-semibold font-raleway mb-3">Select Your Seat</h4>
-                    <hr class="border-dashed border-[#030712IA]">
-                    <div>
-                        <div class="flex justify-between">
-                            <p>Seat<span>0</span></p>
-                            <p>Class</p>
-                            <p>Price</p>
+                    <hr class="border-dashed border-[#030712IA] mb-5">
+                    <div class="bg-[#F7F8F8] p-8 rounded-xl">
+                        <div>
+                            <div class="flex justify-between text-xl text-secondaryColor font-semibold font-inter ">
+                                <p>Seat<span class="text-sm text-white bg-primaryColor px-2 rounded-xl">0</span></p>
+                                <p>Class</p>
+                                <p>Price</p>
+                            </div>
+                            <hr class="border-dashed border-[#030712IA] mb-2">
+                        </div>
+                        <div class="price-calcultor-container">
+
+                        </div>
+                        <hr class="border border-[#030712IA] mb-2">
+                        <div class="flex justify-between text-xl text-secondaryColor font-semibold font-inter">
+                            <p>Total Price</p>
+                            <p>BDT <span>0</span></p>
+                        </div>
+                        <label class="input input-bordered flex items-center gap-2 my-3">
+                            <input type="text" class="grow" placeholder="Have any copupon?" />
+                            <button class="text-white bg-primaryColor py-1 px-4 rounded-md font-inter">Apply</button>
+                        </label>
+                        <div class="flex justify-between text-xl text-secondaryColor font-semibold font-inter">
+                            <p>Grand</p>
+                            <p>BDT <span>0</span></p>
                         </div>
                     </div>
+
+                    <!-- customer input -->
+                    <h4 class="text-sm font-semibold text-secondaryColor">Passenger Name*</h4>
+                    <label class="input input-bordered flex items-center gap-2 my-3">
+                        <input type="text" class="grow" placeholder="Enter your name" required />
+
+                    </label>
+                    <h4 class="text-sm font-semibold text-secondaryColor">Phone Number*</h4>
+                    <label class="input input-bordered flex items-center gap-2 my-3">
+                        <input type="text" class="grow" placeholder="Enter your phone number" required />
+
+                    </label>
+                    <h4 class="text-sm font-semibold text-secondaryColor">Email ID</h4>
+                    <label class="input input-bordered flex items-center gap-2 my-3">
+                        <input type="text" class="grow" placeholder="Enter your name" />
+
+                    </label>
+                    <button
+                        class="text-white font-raleway font-extrabold text-xl bg-primaryColor w-full p-3 rounded-lg">Next</button>
 
 
                 </div>
