@@ -7,3 +7,16 @@
 .font-inter {
     font-family: "Inter", sans-serif;
 }
+
+
+
+.seat button {
+
+    max-width: 80px;
+    border-radius: 10px;
+}
+
+.seat button,
+div {
+    padding: 10px;
+}
