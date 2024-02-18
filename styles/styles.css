@@ -10,13 +10,15 @@
 
 
 
-.seat button {
+
+.seat button,
+.driving-seat {
 
     max-width: 80px;
     border-radius: 10px;
 }
 
 .seat button,
-div {
+.seat div {
     padding: 10px;
 }

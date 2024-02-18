@@ -164,7 +164,7 @@
                                 PM</span>
                         </p>
                         <hr class="border-dashed border-[#030712IA]">
-                        <p class="flex justify-between text-[12px]">
+                        <p class="flex justify-between text-[8px] lg:text-[12px] gap-3">
                             <span class="bg-[#0307120D] py-3 lg:py-5 px-3  lg:px-10 rounded-xl">Boarding Point -
                                 Laxmipur</span>
                             <span class="bg-[#0307120D] py-3 lg:py-5 px-3  lg:px-10 rounded-xl">Dropping Point -
@@ -183,12 +183,13 @@
 
             </div>
             <!-- select your seat section -->
-            <section class="mx-auto container bg-white flex flex-col lg:flex-row items-center rounded-3xl px-4 mt-8">
-                <div class="flex-1">
+            <section
+                class="mx-auto container bg-white flex flex-col lg:flex-row gap-5 items-center rounded-3xl px-4 mt-8 py-3">
+                <div class="flex-1 lg:border-r-2 lg:border-dashed">
                     <!-- seat structure -->
                     <h4 class="text-2xl font-semibold font-raleway mb-3">Select Your Seat</h4>
-                    <hr class="border-dashed border-[#030712IA]">
-                    <div class="flex justify-between">
+                    <hr class="border-dashed border-[#030712IA] lg:mr-14">
+                    <div class="flex justify-around">
                         <div class="flex text-[#03071280] font-semibold font-inter">
                             <img src="images/seat-gray.png" alt="">
                             <p>Available</p>
@@ -198,74 +199,99 @@
                             <p>Selected</p>
                         </div>
                     </div>
-                    <hr class="border-dashed border-[#030712IA]">
-                    <div class="grid grid-cols-9 gap-3 seat text-[#03071280] font-inter font-semibold ">
+                    <hr class="border-dashed border-[#030712IA] lg:mr-14">
+                    <div class="grid grid-cols-10 gap-3 seat text-[#03071280] font-inter font-semibold mt-3">
                         <!-- row -->
+                        <div class="col-span-1"></div>
+                        <div class="col-span-2"></div>
+                        <div class="col-span-2"></div>
+                        <div class="col-span-1"></div>
+                        <div class="col-span-2"></div>
+                        <div class="col-span-2 bg-[#F7F8F8] driving-seat flex justify-center"><img
+                                src="images/Vector.png" alt="">
+                        </div>
                         <div class="col-span-1">A</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">A1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">A2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">A3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">A4</button>
                         <!-- row -->
                         <div class="col-span-1">B</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">B1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">B2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">B3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">B4</button>
                         <!-- row -->
                         <div class="col-span-1">C</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">C1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">C2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">C3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">C4</button>
                         <!-- row -->
                         <div class="col-span-1">D</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">D1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">D2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">D3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">D4</button>
                         <!-- row -->
                         <div class="col-span-1">E</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">E1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">E2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">E3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">E4</button>
                         <!-- row -->
                         <div class="col-span-1">F</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">F1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">F2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">F3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">F4</button>
                         <!-- row -->
                         <div class="col-span-1">G</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">G1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">G2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">G3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">G4</button>
                         <!-- row -->
                         <div class="col-span-1">H</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">H1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">H2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">H3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">H4</button>
                         <!-- row -->
                         <div class="col-span-1">I</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">I1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">I2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">I3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">I4</button>
                         <!-- row -->
                         <div class="col-span-1">J</div>
                         <button class="col-span-2 bg-[#F7F8F8] ">J1</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">J2</button>
+                        <div class="col-span-1"></div>
                         <button class="col-span-2 bg-[#F7F8F8] ">J3</button>
                         <button class="col-span-2 bg-[#F7F8F8] ">J4</button>
                     </div>
                 </div>
-                <div>
+                <div class="w-full lg:w-[45%]">
                     <!-- seat input field -->
                     <h4 class="text-2xl font-semibold font-raleway mb-3">Select Your Seat</h4>
                     <hr class="border-dashed border-[#030712IA]">
+                    <div>
+                        <div class="flex justify-between">
+                            <p>Seat<span>0</span></p>
+                            <p>Class</p>
+                            <p>Price</p>
+                        </div>
+                    </div>
 
 
                 </div>
