@@ -18,6 +18,11 @@
     border-radius: 10px;
 }
 
+.price-calcultor-container li {
+    display: flex;
+    justify-content: space-between;
+}
+
 .seat button,
 .seat div {
     padding: 10px;
