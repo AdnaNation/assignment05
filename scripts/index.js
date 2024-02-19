@@ -86,3 +86,23 @@ discountBtn.addEventListener('click', function(){
     }
    
 });
+
+// passenger input
+
+
+
+const nextButton = document.getElementById('next-btn');
+nextButton.addEventListener('click', function(e){
+    const passengerName = document.getElementById('passenger-name').value;
+    const passengerNumber = parseInt(document.getElementById('passenger-number').value);
+    console.log(typeof passengerNumber)
+
+    const passengerEmail = document.getElementById('passenger-email').value;
+    if(typeof passengerName === "string" && isNaN(passengerName) && typeof passengerNumber === "number" && !isNaN(passengerNumber)){
+        hideElementById('main-body');
+        showElementById ('modal')
+    }
+    else{
+        alert('Please type correct input')
+    }
+})

@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <section>
+    <section id="main-body" class="">
         <header class="mx-auto container">
             <!-- nav section -->
             <div class="navbar bg-base-100 mb-3">
@@ -336,21 +336,24 @@
                         <!-- customer input -->
                         <h4 class="text-sm font-semibold text-secondaryColor mt-3">Passenger Name*</h4>
                         <label class="input input-bordered flex items-center gap-2 mb-3">
-                            <input type="text" class="grow" placeholder="Enter your name" required />
+                            <input id="passenger-name" type="text" class="grow" placeholder="Enter your name"
+                                required />
 
                         </label>
                         <h4 class="text-sm font-semibold text-secondaryColor">Phone Number*</h4>
                         <label class="input input-bordered flex items-center gap-2 mb-3">
-                            <input type="text" class="grow" placeholder="Enter your phone number" required />
+                            <input id="passenger-number" type="text" class="grow" placeholder="Enter your phone number"
+                                required />
 
                         </label>
                         <h4 class="text-sm font-semibold text-secondaryColor">Email ID</h4>
                         <label class="input input-bordered flex items-center gap-2 mb-3">
-                            <input type="text" class="grow" placeholder="Enter your name" />
+                            <input id="passenger-email" type="text" class="grow" placeholder="Enter your name" />
 
                         </label>
                         <button
-                            class="btn text-white font-raleway font-extrabold text-xl bg-primaryColor w-full  rounded-lg">Next</button>
+                            class="btn text-white font-raleway font-extrabold text-xl bg-primaryColor w-full  rounded-lg"
+                            type="submit" id="next-btn">Next</button>
 
                         <div class="flex justify-around underline text-xs lg:text-xl text-thirdColor mt-3">
                             <a href="">Terms and Conditions</a>
@@ -402,7 +405,7 @@
     </section>
 
     <!-- success modal section -->
-    <section class="mx-auto container min-h-screen bg-[#F2F1F1] flex justify-center items-center">
+    <section id="modal" class=" hidden mx-auto container min-h-screen bg-[#F2F1F1] flex justify-center items-center">
         <div class="bg-white p-10 max-w-2xl flex flex-col justify-center text-center font-inter space-y-4 rounded-md">
             <div class="flex justify-center"><img src="images/success.png" class="w-24" alt=""></div>
             <h2 class="text-2xl  font-bold text-[#27AE60]">SUCCESS</h2>
