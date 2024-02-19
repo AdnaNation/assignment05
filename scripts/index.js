@@ -3,13 +3,23 @@ let selctedSeatCount = 0;
 let seatLeft = 40;
 let seatCount = 1;
 let totalPrice = 0;
+
+
+
 for(const seat of seats){
     seat.addEventListener('click', function(e){
-        seat.classList.add('bg-primaryColor')
 
+        seat.classList.add('bg-primaryColor')
+       
         selctedSeatCount = selctedSeatCount + 1;
         seatLeft -=1;
-      
+
+        if(selctedSeatCount === 4){
+            for(const button of seats){
+                button.setAttribute('disabled', true);
+            }
+        }
+        
         const seatName = e.target.innerText;
         const className = 'Economy'
         const price = parseFloat(document.getElementById('seat-price').innerText);
@@ -38,11 +48,41 @@ for(const seat of seats){
         console.log(totalPrice)
         setInnerText('total-price', totalPrice);
 
-
-      
-
+        const grandElement = document.getElementById('grand-total');
+        setInnerText('grand-total', totalPrice);
     } );
-        
-    
-
+  
 }
+
+const discountBtn = document.getElementById('discount-apply');
+discountBtn.addEventListener('click', function(){
+   
+
+    const couponCode = document.getElementById('coupon-code').value;
+    if(selctedSeatCount === 4){
+        if(couponCode === 'NEW15'){
+            const discountElement = document.getElementById('grand-total');
+            const discountPrice = totalPrice * 0.2
+            discountElement.innerText = totalPrice - discountPrice;
+            document.getElementById('discount-apply').disabled = true;
+            document.getElementById('coupon-code').value = ' ';
+        }
+        else if(couponCode === 'Couple 20'){
+            const discountElement = document.getElementById('grand-total');
+            const discountPrice = totalPrice * 0.15
+            discountElement.innerText = totalPrice - discountPrice;
+            document.getElementById('discount-apply').disabled = true;
+            document.getElementById('coupon-code').value = ' ';
+        }
+
+        else{
+            alert('Invalid Coupon');
+            document.getElementById('coupon-code').value = ' ';
+        }
+
+    }
+    else{
+        alert("You have to select 4 seat for discount")
+    }
+   
+});

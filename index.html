@@ -56,8 +56,8 @@
                             within the app. The
                             integrated testing features allow for a streamlined.</p>
                         <button
-                            class="btn text-xl font-bold text- secondaryColor font-raleway bg-primaryColor border-none ">Buy
-                            Tickets</button>
+                            class="btn text-xl font-bold text- secondaryColor font-raleway bg-primaryColor border-none"><a
+                                href="#select-your-seat">Buy Tickets</a></button>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,8 @@
                 </div>
                 <!-- select your seat section -->
                 <section
-                    class="mx-auto container bg-white flex flex-col lg:flex-row gap-5 items-center rounded-3xl px-4 mt-8 py-3">
+                    class="mx-auto container bg-white flex flex-col lg:flex-row gap-5 items-center rounded-3xl px-4 mt-8 py-3"
+                    id="select-your-seat">
                     <div class="flex-1 lg:border-r-2 lg:border-dashed">
                         <!-- seat structure -->
                         <h4 class="text-2xl font-semibold font-raleway mb-3">Select Your Seat</h4>
@@ -235,7 +236,7 @@
                             <!-- row -->
                             <div class="col-span-1">B</div>
                             <button class="col-span-2 bg-[#F7F8F8] btn chair ">B1</button>
-                            <button class="col-span-2 bg-[#F7F8F8] btn chair ">B2</button>
+                            <button class="col-span-2 bg-[#F7F8F8] btn chair">B2</button>
                             <div class="col-span-1"></div>
                             <button class="col-span-2 bg-[#F7F8F8] btn chair ">B3</button>
                             <button class="col-span-2 bg-[#F7F8F8] btn chair ">B4</button>
@@ -320,14 +321,15 @@
                                 <p>Total Price</p>
                                 <p>BDT <span id="total-price">0</span></p>
                             </div>
-                            <label class="input input-bordered flex items-center gap-2 my-3">
-                                <input type="text" class="grow" placeholder="Have any copupon?" />
-                                <button
-                                    class="btn text-white bg-primaryColor py-1 px-4 rounded-md font-inter ">Apply</button>
+                            <label class=" dis-hidden input input-bordered flex items-center gap-2 my-3">
+                                <input id="coupon-code" type="text" class="grow" placeholder="Have any copupon?" />
+                                <button class="btn text-white bg-primaryColor py-1 px-4 rounded-md font-inter "
+                                    id="discount-apply">Apply</button>
                             </label>
-                            <div class="flex justify-between text-xl text-secondaryColor font-semibold font-inter">
-                                <p>Grand</p>
-                                <p>BDT <span>0</span></p>
+                            <div
+                                class=" dis-hidden flex justify-between text-xl text-secondaryColor font-semibold font-inter">
+                                <p>Grand Total</p>
+                                <p>BDT <span id="grand-total">0</span></p>
                             </div>
                         </div>
 
