@@ -9,7 +9,11 @@ let totalPrice = 0;
 for(const seat of seats){
     seat.addEventListener('click', function(e){
 
-        seat.classList.add('bg-primaryColor')
+        
+        // seat.classList.add('bg-primaryColor');
+        seat.style.backgroundColor = '#1DD100';
+        seat.style.color ='white';
+        seat.setAttribute('disabled', true);
        
         selctedSeatCount = selctedSeatCount + 1;
         seatLeft -=1;
@@ -45,7 +49,6 @@ for(const seat of seats){
         
         // calculate totalprice
         totalPrice += price;
-        console.log(totalPrice)
         setInnerText('total-price', totalPrice);
 
         const grandElement = document.getElementById('grand-total');
@@ -88,14 +91,10 @@ discountBtn.addEventListener('click', function(){
 });
 
 // passenger input
-
-
-
 const nextButton = document.getElementById('next-btn');
 nextButton.addEventListener('click', function(e){
     const passengerName = document.getElementById('passenger-name').value;
     const passengerNumber = parseInt(document.getElementById('passenger-number').value);
-    console.log(typeof passengerNumber)
 
     const passengerEmail = document.getElementById('passenger-email').value;
     if(typeof passengerName === "string" && isNaN(passengerName) && typeof passengerNumber === "number" && !isNaN(passengerNumber)){
@@ -103,6 +102,13 @@ nextButton.addEventListener('click', function(e){
         showElementById ('modal')
     }
     else{
-        alert('Please type correct input')
+        alert('Please type atleast Name and Phone Number correctly ')
     }
 })
+
+// // last page to first page
+// const continueBtn = document.getElementById('continue-btn');
+// continueBtn.addEventListener('click', function(){
+//     hideElementById('modal');
+//     showElementById ('main-body') 
+// })
